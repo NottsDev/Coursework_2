@@ -1,0 +1,34 @@
+Data Logging Initiated - 05/4/2025
+Location: Nottingham, UK
+
+Minute			0.00
+Temperature		19.40°C
+
+Minute			1.00
+Temperature		19.89°C
+
+Minute			2.00
+Temperature		19.89°C
+
+Minute			3.00
+Temperature		19.89°C
+
+Minute			4.00
+Temperature		19.89°C
+
+Minute			5.00
+Temperature		19.89°C
+
+Minute			6.00
+Temperature		19.89°C
+
+Minute			7.00
+Temperature		19.89°C
+
+Minute			8.00
+Temperature		19.89°C
+
+Minute			9.00
+Temperature		19.89°C
+
+Data logging terminated
