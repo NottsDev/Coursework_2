@@ -52,8 +52,11 @@ function temp_monitor(a)
     temp_vals = [];
     t_start = tic;
 
+    power = true;
+
+
     % Main Monitoring Loop
-    while true
+    while power
         % Read time and temperature
         t_now = round(toc(t_start));
         voltage = readVoltage(a, sensorPin);

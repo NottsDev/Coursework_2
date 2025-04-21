@@ -28,9 +28,6 @@ function temperature_prediction_model(a)
 %   - If the rate exceeds +4°C per minute: Then Red LED is ON.
 %   - If the rate goes below -4°C per minute: Then Yellow LED is ON.
 
-
-
-
 %For temp reading calcs
 input_pin = 'A1';
 V0 = 0.5; %in V
