@@ -1,6 +1,29 @@
 function temp_monitor(a)
-% temp_monitor - Live temperature monitoring with LED control and real-time plotting
-% a - Arduino object passed from main script
+% Documentation:
+% This function continuously measures the voltage using a
+% thermoresistor connected to an Arduino. It then calculates the temperature, 
+% and uses three LEDs to indicate
+%     - Comfortable temperature -> green LED ON
+%     - Too Hot -> red LED ON
+%     - Too Cold -> yellow LED ON
+%
+% The functions then also produces a live plot of the temperature by creating
+% an empty plot which keeps updating in the loop
+%
+% The hardware setup includes: 
+%   - The thermoresistor connected to analog pin A1.
+%   - Green LED connected to digital pin D9.
+%   - Yellow LED connected to digital pin D10.
+%   - Red LED connected to digital pin D11.
+%
+% Constants:
+%   V0 - Voltage output from the sensor at 0°C (0.5 V).
+%   TC - Temperature coefficient of the sensor (0.01 V/°C).
+%
+% Results from the loop:
+%   - If the temperature is between 18°C to 24°C: Then Green LED is ON.
+%   - If the temperature exceeds 24°C: Then Red LED is ON.
+%   - If the temperature is below 18°C: Then Yellow LED is ON.
 
     %Sensor & LED Configuration
     V0 = 0.5;       % Voltage at 0°C (TMP36)
