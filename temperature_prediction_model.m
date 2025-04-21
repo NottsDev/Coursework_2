@@ -1,5 +1,36 @@
 function temperature_prediction_model(a)
 
+% Documentation:
+% This function continuously measures the temperature using a
+% thermoresistor connected to an Arduino. It then calculates the rate of 
+% temperature change, and predicts the temperature 5 minutes into the 
+% future. It uses three LEDs to visually indicate:
+%     - Stable temperature -> green LED ON
+%     - Fast temperature increase -> red LED ON
+%     - Rapid temperature decrease -> yellow LED ON
+%
+%  The prediction is based on a linear regression of the most recent 
+%  temperature data, which also helps to smooth out local noise so that it 
+%  does not provide false readings.
+%
+% The hardware setup includes: 
+%   - The thermoresistor connected to analog pin A1.
+%   - Green LED connected to digital pin D9.
+%   - Yellow LED connected to digital pin D10.
+%   - Red LED connected to digital pin D11.
+%
+% Constants:
+%   V0 - Voltage output from the sensor at 0°C (0.5 V).
+%   TC - Temperature coefficient of the sensor (0.01 V/°C).
+%
+% Results from the loop:
+%   - If the temperature change rate is within ±4°C per minute: Then Green LED is ON.
+%   - If the rate exceeds +4°C per minute: Then Red LED is ON.
+%   - If the rate goes below -4°C per minute: Then Yellow LED is ON.
+
+
+
+
 %For temp reading calcs
 input_pin = 'A1';
 V0 = 0.5; %in V
