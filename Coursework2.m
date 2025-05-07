@@ -120,8 +120,39 @@ temperature_prediction_model(a);
 
 %% TASK 4 - REFLECTIVE STATEMENT [5 MARKS]
 
-% This project invlo
+% --- Reflective Statement ---
 
+% This project involved having developing Matlab code for an arduino hardware 
+% to measure, plot and predict the ambient temperature in a aircraft cabin. 
+% Throughout the development process of this project, several challenges 
+% were faced such as figuring out the implementation of the prediction model 
+% in matlab. Earlier versions of the code involved just using averages over 
+% a moving window which wasn't enough. Hence an linear regression fit over 
+% a moving data window to smooth out the noise and give an accurate reading 
+% was implemented in the code.
+
+% A strength of this project was the successful integration of multiple 
+% functionalities together without (for the most part) any bulky code. 
+% These features are live data plotting, LED feedback, temperature prediction, 
+% and rate-of-change monitoring. Each feature was modular  developed, allowing 
+% to make it easier testing and debugging. The code also implements a better 
+% real life scenario while setting both the functions main while loops to 
+% "power" as in real life they would not be running indefinitely.
+
+% However, there are some limitations. The temperature sensor is very prone 
+% to noise, which impacted short-term readings (in all function) and made 
+% the prediction less reliable in fluctuating conditions. While basic 
+% smoothing such as moving-window regression line were implemented in the code, 
+% more sophisticated filtering techniques (like exponential smoothing) could 
+% help improve accuracy. 
+
+% For future improvements the LED system could be changed for a more
+% comprehensive indication system as it was far too simplistic and required
+% two entirely different systems to two task (temperature monitoring and
+% predictions), and is in a whole inefficient. Another improvement could be
+% to the prediction method, as even with smoothing the prediction is not
+% very accurate. The solution here could be in more complicated methods
+% such as mathematical model & machine learning.
 
 %% TASK 5 - COMMENTING, VERSION CONTROL AND PROFESSIONAL PRACTICE [15 MARKS]
 

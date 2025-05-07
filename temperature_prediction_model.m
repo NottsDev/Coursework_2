@@ -50,7 +50,7 @@ t_now = 0;
 window_size = 5; %This will be used to ensure there are enough data points to carry out prediction
 prediction_window = 5*60;
 
-% A condition for the loop for it do infinity or end
+% A condition for the loop for it loop infinity or end
 power = true;
 
 % The Main Prediction Loop
