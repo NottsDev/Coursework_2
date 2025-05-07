@@ -1,4 +1,4 @@
-This are all the files for the Matlab coursework 2, inlcluding the flow charts & txt files. 
+These are all the files for the Matlab coursework 2, inlcluding the flow charts & txt files. 
 Note: The txt file is needed to be regerated in from the code, as the one commited in git hub presents data spaing 20 seconds (for debugging purposes).
 
 Below are the documentations of the functions in the code (**they are also accessable by using the doc function and the function name in the command window**): 
